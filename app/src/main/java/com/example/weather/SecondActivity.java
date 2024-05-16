@@ -2,38 +2,35 @@ package com.example.weather;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SecondActivity extends AppCompatActivity {
+import com.example.weather.sampledata.DataModel;
 
-    TextView receiveText;
+import java.util.ArrayList;
+import java.util.List;
+
+public class SecondActivity extends AppCompatActivity {
+    private ListView listView;
+    private List<DataModel> dataModels = new ArrayList<>();
 
     Button goBack;
-
     @Override
     protected void onCreate(Bundle savedInstanceState ) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second_activity);
 
-        receiveText = findViewById(R.id.received_value_id);
+        dataModels.add(new DataModel("Title1", "This is Title1"));
+        dataModels.add(new DataModel("Title2", "This is Title2"));
+
         goBack = findViewById(R.id.go_back);
 
-
-        Intent intent = getIntent();
-        String text = intent.getStringExtra("parentMess");
-        receiveText.setText("Hello " + text);
-
-
         goBack.setOnClickListener(v -> {
-//            Intent goBackIntent = new Intent(SecondActivity.this, FirstActivity.class);
-//            startActivity(goBackIntent);
-            ToastUtil.showCustomToast(SecondActivity.this,"This is a custom toast message!");
+            Intent goBackIntent = new Intent(SecondActivity.this, FirstActivity.class);
+            startActivity(goBackIntent);
         });
-
-
-
     }
 }

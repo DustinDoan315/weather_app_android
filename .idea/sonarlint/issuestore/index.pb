@@ -9,3 +9,7 @@ D
 build.gradle.kts,d/b/dbcff70658daf80b53ce624f6adcaa529df5ed8d
 d
 4app/src/main/java/com/example/weather/ToastUtil.java,f/6/f641729ef41d3d5b5202b9fce669c5bda9ca36dd
+h
+8app/src/main/java/com/example/weather/CustomAdapter.java,c/b/cbefb0e56d55aeb4382d461053d7a6f0a456d62d
+o
+?app/src/main/java/com/example/weather/sampledata/DataModel.java,e/0/e0ea57150711a10f8a3a73f55e7f3f343408235e

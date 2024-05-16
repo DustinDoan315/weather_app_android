@@ -1,4 +1,3 @@
 
-g
-java:S1602",Remove useless curly braces around statement(¸£ÙbJ$9187bdac-e8da-4549-bea5-e66beb36c9d1
-|	java:S125"<This block of commented-out lines of code should be removed.(ò”Ð¨ûÿÿÿÿJ$3ed79a20-96f3-4470-ba93-390598484894
+t
+java:S1068",Remove this unused "listView" private field.(¯¤½ñûÿÿÿÿ8Ê¨¢‚ø1J$a5aa548d-5365-41fa-bcfc-15da16e185b9
